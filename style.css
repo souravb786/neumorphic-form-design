@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 62.8%;
+    text-shadow:  1px 0 #FFF;
+}
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background: #EBECF0;
+}
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    background: #EBECF0;
+    padding: 4rem;
+    border-radius: 2rem;
+    box-shadow: 20px 20px 40px rgba(0,0,0,0.1), -20px -20px 40px rgba(255,255,255,0.6);
+}
+.field-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-flow: column;
+}
+.main-container .field-container label, input{
+    font-size: 2rem;
+    color: rgb(136, 136, 136);
+}
+.main-container .field-container label{
+    color: rgb(122, 122, 122);
+}
+.main-container .field-container input{
+    padding: 1rem 2rem;
+    outline: none;
+    border: none;
+    background: #EBECF0;
+    border-radius: 2rem;
+    box-shadow: inset 2px 2px 10px #BABECC,inset -5px -5px 10px #fff;
+    transition: all 0.3s ease-in;
+}
+.main-container .field-container input:focus{
+    box-shadow: inset 2px 2px 5px #BABECC, inset -2px -2px 5px #fff;
+}
+.main-container .field-container {
+    margin: 1rem 0rem;
+}
+.main-container button{
+    margin-top: 2rem;
+    color: rgb(136, 136, 136);
+    width: 100%;
+    font-size: 2rem;
+    padding: 1rem 0rem;
+    border-radius: 0.6rem;
+    outline: none;
+    border: none;
+    background: #efefef;
+    text-shadow:  1px 0 #FFF;
+    font-weight: 600;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.1), -5px -5px 15px #fff;
+}
+.main-container button:active{
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.1), -10px -10px 15px rgba(255,255,255,0.8),
+                inset 15px 15px 15px rgba(0,0,0,0.1), inset -15px -15px 15px rgba(255,255,255,0.5);
+    color: rgb(2, 219, 2);
+}
+.main-container .field-container label{
+    margin-bottom: 1rem;
+}
